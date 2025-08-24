@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.10.0 on win32)" generated="2025-08-24T20:25:50.138181" rpa="false" schemaversion="5">
+<suite id="s1" name="Profile Test" source="c:\Users\PC\Desktop\Wingz\My Profile\Profile_Test.robot">
+<test id="s1-t1" name="Verify Data Persistence After Successful Save" line="11">
+<kw name="Navigate To Site" owner="Global_Keyword" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-08-24T20:25:50.432475" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\PC\\Desktop\\Wingz\\browser\\traces\\temp\\3b43f477-b6f0-4a4f-9382-16b6392ea05a"}</msg>
+<msg time="2025-08-24T20:25:50.468725" level="INFO">Starting Browser process c:\venv\lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:64884</msg>
+<msg time="2025-08-24T20:25:52.357352" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\PC\\Desktop\\Wingz\\browser\\traces\\temp\\3b43f477-b6f0-4a4f-9382-16b6392ea05a"}</msg>
+<arg>${browser}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-08-24T20:25:50.431475" elapsed="1.926874"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-08-24T20:25:54.696982" level="INFO">Successfully initialized new page object and opened url: https://auth.wingz.me/auth/signin</msg>
+<msg time="2025-08-24T20:25:54.697987" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${url}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-08-24T20:25:52.358349" elapsed="2.340635"/>
+</kw>
+<kw name="Set Viewport Size" owner="Browser">
+<msg time="2025-08-24T20:25:54.727342" level="INFO">Set viewport size to: [object Object]</msg>
+<arg>1920</arg>
+<arg>1080</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Sets current Pages viewport size to specified dimensions.</doc>
+<status status="PASS" start="2025-08-24T20:25:54.698984" elapsed="0.029358"/>
+</kw>
+<arg>${BASE_URL}</arg>
+<arg>chromium</arg>
+<doc>Navigate to specified URL using Browser Library</doc>
+<status status="PASS" start="2025-08-24T20:25:50.430465" elapsed="4.298873"/>
+</kw>
+<kw name="Given The User Is In My Profile Page" owner="Profile_Keyword">
+<kw name="Login To Wingz" owner="Global_Keyword">
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-08-24T20:25:54.740172" level="INFO">Fills the text 'tadeomarvic7@gmail.com' in the given field.</msg>
+<arg>${INPUT_USERNAME}</arg>
+<arg>${username}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-08-24T20:25:54.737164" elapsed="0.078140"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-08-24T20:25:54.817309" level="INFO">Fills the text 'pass1234' in the given field.</msg>
+<arg>${INPUT_PASSWORD}</arg>
+<arg>${password}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-08-24T20:25:54.816305" elapsed="0.028007"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-08-24T20:25:54.846832" level="INFO">Clicks the element '//button[@type="submit" and contains(text(), "Sign In")]'.</msg>
+<arg>${BTN_LOGIN}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-24T20:25:54.845820" elapsed="0.088781"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-08-24T20:25:57.830708" level="INFO">Waited for Element with selector (//*[contains(text(), "Sign Out")])[1] at state visible</msg>
+<arg>${SIGNOUT}</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-08-24T20:25:54.935581" elapsed="2.896139"/>
+</kw>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+<doc>Logs into Wingz application using provided credentials</doc>
+<status status="PASS" start="2025-08-24T20:25:54.734631" elapsed="3.097089"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-08-24T20:25:57.834731" level="INFO">Clicks the element '//a[@href='/account' and @ui-sref='profile.edit-profile' and text()='Account']'.</msg>
+<arg>${ACCOUNT}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-24T20:25:57.832721" elapsed="0.281562"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-08-24T20:25:58.195416" level="INFO">Waited for Element with selector //a[@href='/account/profile' and @ui-sref='profile.my-profile' and normalize-space()='My Profile'] at state visible</msg>
+<arg>${MY_PROFILE_TAB}</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-08-24T20:25:58.114283" elapsed="0.081133"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-08-24T20:25:58.197417" level="INFO">Clicks the element '//a[@href='/account/profile' and @ui-sref='profile.my-profile' and normalize-space()='My Profile']'.</msg>
+<arg>${MY_PROFILE_TAB}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-24T20:25:58.196414" elapsed="0.084830"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-08-24T20:25:58.318770" level="INFO">Waited for Element with selector //h2[text()='My Profile'] at state visible</msg>
+<arg>${MY_PROFILE_TITLE}</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-08-24T20:25:58.281954" elapsed="0.037848"/>
+</kw>
+<doc>Navigate to My Profile Page</doc>
+<status status="PASS" start="2025-08-24T20:25:54.731868" elapsed="3.587934"/>
+</kw>
+<kw name="When The User Update All Fields And Click Save" owner="Profile_Keyword">
+<kw name="Set Random Value In Variables" owner="Profile_Keyword">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-08-24T20:25:58.327250" level="INFO">${RANDOM} = Ofyuqbe</msg>
+<var>${RANDOM}</var>
+<arg>''.join(random.choices(string.ascii_lowercase, k=random.randint(3,10))).capitalize()</arg>
+<arg>modules=random,string</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-08-24T20:25:58.324808" elapsed="0.002442"/>
+</kw>
+<return>
+<value>${RANDOM}</value>
+<status status="PASS" start="2025-08-24T20:25:58.327250" elapsed="0.001002"/>
+</return>
+<msg time="2025-08-24T20:25:58.328252" level="INFO">${RANDOM_FNAME} = Ofyuqbe</msg>
+<var>${RANDOM_FNAME}</var>
+<doc>Set random values</doc>
+<status status="PASS" start="2025-08-24T20:25:58.321806" elapsed="0.007187"/>
+</kw>
+<kw name="Set Random Value In Variables" owner="Profile_Keyword">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-08-24T20:25:58.330514" level="INFO">${RANDOM} = Ksdwadpjr</msg>
+<var>${RANDOM}</var>
+<arg>''.join(random.choices(string.ascii_lowercase, k=random.randint(3,10))).capitalize()</arg>
+<arg>modules=random,string</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-08-24T20:25:58.328993" elapsed="0.001521"/>
+</kw>
+<return>
+<value>${RANDOM}</value>
+<status status="PASS" start="2025-08-24T20:25:58.331526" elapsed="0.000000"/>
+</return>
+<msg time="2025-08-24T20:25:58.331526" level="INFO">${RANDOM_LNAME} = Ksdwadpjr</msg>
+<var>${RANDOM_LNAME}</var>
+<doc>Set random values</doc>
+<status status="PASS" start="2025-08-24T20:25:58.328993" elapsed="0.002533"/>
+</kw>
+<kw name="Set Random Value In Variables" owner="Profile_Keyword">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-08-24T20:25:58.333525" level="INFO">${RANDOM} = Aatvbidk</msg>
+<var>${RANDOM}</var>
+<arg>''.join(random.choices(string.ascii_lowercase, k=random.randint(3,10))).capitalize()</arg>
+<arg>modules=random,string</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-08-24T20:25:58.333525" elapsed="0.000998"/>
+</kw>
+<return>
+<value>${RANDOM}</value>
+<status status="PASS" start="2025-08-24T20:25:58.334523" elapsed="0.000000"/>
+</return>
+<msg time="2025-08-24T20:25:58.335523" level="INFO">${RANDOM_HOME} = Aatvbidk</msg>
+<var>${RANDOM_HOME}</var>
+<doc>Set random values</doc>
+<status status="PASS" start="2025-08-24T20:25:58.332523" elapsed="0.003000"/>
+</kw>
+<kw name="Set Random Value In Variables" owner="Profile_Keyword">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-08-24T20:25:58.337526" level="INFO">${RANDOM} = Hchzykzf</msg>
+<var>${RANDOM}</var>
+<arg>''.join(random.choices(string.ascii_lowercase, k=random.randint(3,10))).capitalize()</arg>
+<arg>modules=random,string</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-08-24T20:25:58.336527" elapsed="0.001997"/>
+</kw>
+<return>
+<value>${RANDOM}</value>
+<status status="PASS" start="2025-08-24T20:25:58.338524" elapsed="0.000000"/>
+</return>
+<msg time="2025-08-24T20:25:58.340533" level="INFO">${RANDOM_BIO} = Hchzykzf</msg>
+<var>${RANDOM_BIO}</var>
+<doc>Set random values</doc>
+<status status="PASS" start="2025-08-24T20:25:58.335523" elapsed="0.005010"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-08-24T20:25:58.353717" level="INFO">Waited for Element with selector //wz-radio[@value='M']//label[contains(@class, 'checked')] at state visible</msg>
+<arg>${RADIO_MALE_SELECTED}</arg>
+<arg>visible</arg>
+<arg>timeout=5s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-08-24T20:25:58.343535" elapsed="0.010182"/>
+</kw>
+<msg time="2025-08-24T20:25:58.354718" level="INFO">${is_male_selected} = True</msg>
+<var>${is_male_selected}</var>
+<arg>Wait For Elements State</arg>
+<arg>${RADIO_MALE_SELECTED}</arg>
+<arg>visible</arg>
+<arg>timeout=5s</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2025-08-24T20:25:58.341530" elapsed="0.013188"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Click" owner="Browser">
+<msg time="2025-08-24T20:25:58.358230" level="INFO">Clicks the element '//wz-radio[@value='F']//label'.</msg>
+<arg>${RADIOBTN_FEMALE}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-24T20:25:58.356718" elapsed="0.107861"/>
+</kw>
+<arg>${is_male_selected}</arg>
+<arg>Click</arg>
+<arg>${RADIOBTN_FEMALE}</arg>
+<arg>ELSE</arg>
+<arg>Click</arg>
+<arg>${RADIOBTN_MALE}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2025-08-24T20:25:58.355716" elapsed="0.109866"/>
+</kw>
+<kw name="Set Test Variable" owner="BuiltIn">
+<msg time="2025-08-24T20:25:58.466580" level="INFO">${IS_MALE_SELECTED} = True</msg>
+<arg>${IS_MALE_SELECTED}</arg>
+<arg>${is_male_selected}</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<status status="PASS" start="2025-08-24T20:25:58.465582" elapsed="0.000998"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-08-24T20:25:58.468580" level="INFO">Fills the text 'Ofyuqbe' in the given field.</msg>
+<arg>${TXT_FIRSTNAME}</arg>
+<arg>${RANDOM_FNAME}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-08-24T20:25:58.466580" elapsed="0.028644"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-08-24T20:25:58.496224" level="INFO">Fills the text 'Ksdwadpjr' in the given field.</msg>
+<arg>${TXT_LASTNAME}</arg>
+<arg>${RANDOM_LNAME}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-08-24T20:25:58.495224" elapsed="0.020639"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-08-24T20:25:58.516874" level="INFO">Fills the text 'Aatvbidk' in the given field.</msg>
+<arg>${TXT_HOME_CITY}</arg>
+<arg>${RANDOM_HOME}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-08-24T20:25:58.516874" elapsed="0.014186"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-08-24T20:25:58.532069" level="INFO">Fills the text 'Hchzykzf' in the given field.</msg>
+<arg>${TXT_BIO}</arg>
+<arg>${RANDOM_BIO}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-08-24T20:25:58.531060" elapsed="0.014756"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-08-24T20:25:58.547824" level="INFO">Clicks the element '//button[@type='submit' and contains(., 'Save')]'.</msg>
+<arg>${BTN_SAVE}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-24T20:25:58.546846" elapsed="0.063500"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-08-24T20:25:59.497155" level="INFO">Waited for Element with selector //button[@type='submit' and contains(., 'Saved !')] at state visible</msg>
+<arg>${BTN_SAVED}</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-08-24T20:25:58.610346" elapsed="0.887805"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-08-24T20:25:59.500156" level="INFO">${RANDOM_FNAME} = Ofyuqbe</msg>
+<arg>${RANDOM_FNAME}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-08-24T20:25:59.499181" elapsed="0.001997"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-08-24T20:25:59.503156" level="INFO">${RANDOM_LNAME} = Ksdwadpjr</msg>
+<arg>${RANDOM_LNAME}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-08-24T20:25:59.501178" elapsed="0.002995"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-08-24T20:25:59.508120" level="INFO">${RANDOM_HOME} = Aatvbidk</msg>
+<arg>${RANDOM_HOME}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-08-24T20:25:59.504825" elapsed="0.004909"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-08-24T20:25:59.512646" level="INFO">${RANDOM_BIO} = Hchzykzf</msg>
+<arg>${RANDOM_BIO}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-08-24T20:25:59.511103" elapsed="0.002541"/>
+</kw>
+<doc>Update all fields in My Profile Page and click Save</doc>
+<status status="PASS" start="2025-08-24T20:25:58.320803" elapsed="1.193837"/>
+</kw>
+<kw name="Then The User Data Should Be Persist Even After Reload" owner="Profile_Keyword">
+<kw name="Reload" owner="Browser">
+<msg time="2025-08-24T20:26:00.232153" level="INFO">Reloaded page with options: {"waitUntil": "load"}</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Reloads current active page.</doc>
+<status status="PASS" start="2025-08-24T20:25:59.519273" elapsed="0.713885"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-08-24T20:26:00.620808" level="INFO">Waited for Element with selector //textarea[@name='bio'] at state visible</msg>
+<arg>${TXT_BIO}</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-08-24T20:26:00.234155" elapsed="0.387627"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-08-24T20:26:05.848091" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2025-08-24T20:26:05.848091" level="INFO">See also file:///C:/Users/PC/Desktop/Wingz/playwright-log.txt for additional details.</msg>
+<msg time="2025-08-24T20:26:05.849093" level="FAIL">TimeoutError: locator.waitFor: Timeout 5000ms exceeded.
+Call log:
+  - waiting for locator('//wz-radio[@value=\'M\']//label[contains(@class, \'checked\')]') to be visible
+</msg>
+<arg>${RADIO_MALE_SELECTED}</arg>
+<arg>visible</arg>
+<arg>timeout=5s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="FAIL" start="2025-08-24T20:26:00.627786" elapsed="5.225304">TimeoutError: locator.waitFor: Timeout 5000ms exceeded.
+Call log:
+  - waiting for locator('//wz-radio[@value=\'M\']//label[contains(@class, \'checked\')]') to be visible
+</status>
+</kw>
+<msg time="2025-08-24T20:26:05.853090" level="INFO">${is_male_selected_now} = False</msg>
+<var>${is_male_selected_now}</var>
+<arg>Wait For Elements State</arg>
+<arg>${RADIO_MALE_SELECTED}</arg>
+<arg>visible</arg>
+<arg>timeout=5s</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2025-08-24T20:26:00.623800" elapsed="5.230799"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-08-24T20:26:05.886693" level="INFO">Text: 'Ofyuqbe'</msg>
+<msg time="2025-08-24T20:26:05.887204" level="INFO">${first_name} = Ofyuqbe</msg>
+<var>${first_name}</var>
+<arg>${TXT_FIRSTNAME}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-24T20:26:05.854599" elapsed="0.032605"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-08-24T20:26:05.908504" level="INFO">Text: 'Ksdwadpjr'</msg>
+<msg time="2025-08-24T20:26:05.908504" level="INFO">${last_name} = Ksdwadpjr</msg>
+<var>${last_name}</var>
+<arg>${TXT_LASTNAME}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-24T20:26:05.887764" elapsed="0.020740"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-08-24T20:26:05.922406" level="INFO">Text: ''</msg>
+<msg time="2025-08-24T20:26:05.923429" level="INFO">${home_city} = </msg>
+<var>${home_city}</var>
+<arg>${TXT_HOME_CITY}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-24T20:26:05.909507" elapsed="0.013922"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-08-24T20:26:05.939406" level="INFO">Text: 'Hchzykzf'</msg>
+<msg time="2025-08-24T20:26:05.939406" level="INFO">${bio} = Hchzykzf</msg>
+<var>${bio}</var>
+<arg>${TXT_BIO}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-24T20:26:05.923429" elapsed="0.015977"/>
+</kw>
+<kw name="Should Not Be Equal" owner="BuiltIn">
+<arg>${is_male_selected_now}</arg>
+<arg>${IS_MALE_SELECTED}</arg>
+<doc>Fails if the given objects are equal.</doc>
+<status status="PASS" start="2025-08-24T20:26:05.939406" elapsed="0.000999"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${first_name}</arg>
+<arg>${RANDOM_FNAME}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-08-24T20:26:05.940405" elapsed="0.003004"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${last_name}</arg>
+<arg>${RANDOM_LNAME}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-08-24T20:26:05.943409" elapsed="0.002302"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<msg time="2025-08-24T20:26:05.947281" level="FAIL"> != Aatvbidk</msg>
+<arg>${home_city}</arg>
+<arg>${RANDOM_HOME}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="FAIL" start="2025-08-24T20:26:05.946267" elapsed="0.005014"> != Aatvbidk</status>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${bio}</arg>
+<arg>${RANDOM_BIO}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="NOT RUN" start="2025-08-24T20:26:05.952284" elapsed="0.000000"/>
+</kw>
+<doc>Verify that the updated data persists after reloading the page</doc>
+<status status="FAIL" start="2025-08-24T20:25:59.516717" elapsed="6.436565"> != Aatvbidk</status>
+</kw>
+<kw name="Quit Browser" owner="Global_Keyword" type="TEARDOWN">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-08-24T20:26:06.522011" level="INFO">Slept 500 milliseconds.</msg>
+<arg>0.5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-08-24T20:26:06.020551" elapsed="0.502152"/>
+</kw>
+<kw name="Close Browser" owner="Browser">
+<msg time="2025-08-24T20:26:06.645557" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-08-24T20:26:06.522703" elapsed="0.123512"/>
+</kw>
+<doc>Closes browser after delay</doc>
+<status status="PASS" start="2025-08-24T20:26:06.018978" elapsed="0.627744"/>
+</kw>
+<doc>Validate Successful Save and Data Persistence in My Profile Page</doc>
+<status status="FAIL" start="2025-08-24T20:25:50.428955" elapsed="16.217767"> != Aatvbidk</status>
+</test>
+<doc>This Test Suite Contains Validation of Catalog Page</doc>
+<status status="FAIL" start="2025-08-24T20:25:50.144961" elapsed="16.510770"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Profile Test" id="s1" pass="0" fail="1" skip="0">Profile Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

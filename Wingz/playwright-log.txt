@@ -1,0 +1,135 @@
+{"level":30,"time":"2025-08-24T12:25:51.577Z","pid":17128,"hostname":"Marvic-PC","msg":"Listening on 127.0.0.1:64884"}
+(node:17128) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2025-08-24T12:25:52.100Z","pid":17128,"hostname":"Marvic-PC","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-08-24T12:25:52.352Z","pid":17128,"hostname":"Marvic-PC","msg":"Adding browser to stack: chromium, version: 140.0.7339.16"}
+{"level":30,"time":"2025-08-24T12:25:52.353Z","pid":17128,"hostname":"Marvic-PC","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-08-24T12:25:52.353Z","pid":17128,"hostname":"Marvic-PC","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-08-24T12:25:52.364Z","pid":17128,"hostname":"Marvic-PC","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-08-24T12:25:52.365Z","pid":17128,"hostname":"Marvic-PC","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@3c9f70ac467bc0a6d5f54a6cf521a678\"},\"headless\":true,\"_contextStack\":[],\"id\":\"browser=d0e791e6-2057-46d7-828f-23e01f70d26c\"}"}
+{"level":30,"time":"2025-08-24T12:25:52.380Z","pid":17128,"hostname":"Marvic-PC","msg":"Setting default timeout for context context=a00ef30d-0c36-4810-840c-9796514f39d3 to 10000"}
+{"level":30,"time":"2025-08-24T12:25:52.380Z","pid":17128,"hostname":"Marvic-PC","msg":"Changed active context: context=a00ef30d-0c36-4810-840c-9796514f39d3"}
+{"level":30,"time":"2025-08-24T12:25:52.524Z","pid":17128,"hostname":"Marvic-PC","msg":"Video path: undefined"}
+{"level":30,"time":"2025-08-24T12:25:52.524Z","pid":17128,"hostname":"Marvic-PC","msg":"Changed active page"}
+{"level":30,"time":"2025-08-24T12:25:54.694Z","pid":17128,"hostname":"Marvic-PC","msg":"End of node method newPage"}
+{"level":30,"time":"2025-08-24T12:25:54.710Z","pid":17128,"hostname":"Marvic-PC","msg":"Start of node method setViewportSize"}
+{"level":30,"time":"2025-08-24T12:25:54.725Z","pid":17128,"hostname":"Marvic-PC","msg":"End of node method setViewportSize"}
+{"level":30,"time":"2025-08-24T12:25:54.747Z","pid":17128,"hostname":"Marvic-PC","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-08-24T12:25:54.748Z","pid":17128,"hostname":"Marvic-PC","msg":"Strict mode is enabled, find Locator with //input[@id=\"username\"] in page."}
+{"level":30,"time":"2025-08-24T12:25:54.813Z","pid":17128,"hostname":"Marvic-PC","msg":"End of node method fillText"}
+{"level":30,"time":"2025-08-24T12:25:54.822Z","pid":17128,"hostname":"Marvic-PC","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-08-24T12:25:54.822Z","pid":17128,"hostname":"Marvic-PC","msg":"Strict mode is enabled, find Locator with //input[@id=\"password\"] in page."}
+{"level":30,"time":"2025-08-24T12:25:54.843Z","pid":17128,"hostname":"Marvic-PC","msg":"End of node method fillText"}
+{"level":30,"time":"2025-08-24T12:25:54.849Z","pid":17128,"hostname":"Marvic-PC","msg":"Start of node method click"}
+{"level":30,"time":"2025-08-24T12:25:54.850Z","pid":17128,"hostname":"Marvic-PC","msg":"Strict mode is enabled, find Locator with //button[@type=\"submit\" and contains(text(), \"Sign In\")] in page."}
+{"level":30,"time":"2025-08-24T12:25:54.932Z","pid":17128,"hostname":"Marvic-PC","msg":"End of node method click"}
+{"level":30,"time":"2025-08-24T12:25:54.943Z","pid":17128,"hostname":"Marvic-PC","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-08-24T12:25:54.944Z","pid":17128,"hostname":"Marvic-PC","msg":"Strict mode is enabled, find Locator with (//*[contains(text(), \"Sign Out\")])[1] in page."}
+{"level":30,"time":"2025-08-24T12:25:57.828Z","pid":17128,"hostname":"Marvic-PC","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-08-24T12:25:57.845Z","pid":17128,"hostname":"Marvic-PC","msg":"Start of node method click"}
+{"level":30,"time":"2025-08-24T12:25:57.845Z","pid":17128,"hostname":"Marvic-PC","msg":"Strict mode is enabled, find Locator with //a[@href='/account' and @ui-sref='profile.edit-profile' and text()='Account'] in page."}
+{"level":30,"time":"2025-08-24T12:25:58.112Z","pid":17128,"hostname":"Marvic-PC","msg":"End of node method click"}
+{"level":30,"time":"2025-08-24T12:25:58.117Z","pid":17128,"hostname":"Marvic-PC","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-08-24T12:25:58.117Z","pid":17128,"hostname":"Marvic-PC","msg":"Strict mode is enabled, find Locator with //a[@href='/account/profile' and @ui-sref='profile.my-profile' and normalize-space()='My Profile'] in page."}
+{"level":30,"time":"2025-08-24T12:25:58.194Z","pid":17128,"hostname":"Marvic-PC","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-08-24T12:25:58.199Z","pid":17128,"hostname":"Marvic-PC","msg":"Start of node method click"}
+{"level":30,"time":"2025-08-24T12:25:58.199Z","pid":17128,"hostname":"Marvic-PC","msg":"Strict mode is enabled, find Locator with //a[@href='/account/profile' and @ui-sref='profile.my-profile' and normalize-space()='My Profile'] in page."}
+{"level":30,"time":"2025-08-24T12:25:58.279Z","pid":17128,"hostname":"Marvic-PC","msg":"End of node method click"}
+{"level":30,"time":"2025-08-24T12:25:58.284Z","pid":17128,"hostname":"Marvic-PC","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-08-24T12:25:58.284Z","pid":17128,"hostname":"Marvic-PC","msg":"Strict mode is enabled, find Locator with //h2[text()='My Profile'] in page."}
+{"level":30,"time":"2025-08-24T12:25:58.318Z","pid":17128,"hostname":"Marvic-PC","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-08-24T12:25:58.345Z","pid":17128,"hostname":"Marvic-PC","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-08-24T12:25:58.346Z","pid":17128,"hostname":"Marvic-PC","msg":"Strict mode is enabled, find Locator with //wz-radio[@value='M']//label[contains(@class, 'checked')] in page."}
+{"level":30,"time":"2025-08-24T12:25:58.351Z","pid":17128,"hostname":"Marvic-PC","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-08-24T12:25:58.363Z","pid":17128,"hostname":"Marvic-PC","msg":"Start of node method click"}
+{"level":30,"time":"2025-08-24T12:25:58.363Z","pid":17128,"hostname":"Marvic-PC","msg":"Strict mode is enabled, find Locator with //wz-radio[@value='F']//label in page."}
+{"level":30,"time":"2025-08-24T12:25:58.463Z","pid":17128,"hostname":"Marvic-PC","msg":"End of node method click"}
+{"level":30,"time":"2025-08-24T12:25:58.470Z","pid":17128,"hostname":"Marvic-PC","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-08-24T12:25:58.470Z","pid":17128,"hostname":"Marvic-PC","msg":"Strict mode is enabled, find Locator with //input[@name='firstName'] in page."}
+{"level":30,"time":"2025-08-24T12:25:58.494Z","pid":17128,"hostname":"Marvic-PC","msg":"End of node method fillText"}
+{"level":30,"time":"2025-08-24T12:25:58.498Z","pid":17128,"hostname":"Marvic-PC","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-08-24T12:25:58.498Z","pid":17128,"hostname":"Marvic-PC","msg":"Strict mode is enabled, find Locator with //input[@name='lastName'] in page."}
+{"level":30,"time":"2025-08-24T12:25:58.514Z","pid":17128,"hostname":"Marvic-PC","msg":"End of node method fillText"}
+{"level":30,"time":"2025-08-24T12:25:58.519Z","pid":17128,"hostname":"Marvic-PC","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-08-24T12:25:58.519Z","pid":17128,"hostname":"Marvic-PC","msg":"Strict mode is enabled, find Locator with //input[@name='location'] in page."}
+{"level":30,"time":"2025-08-24T12:25:58.529Z","pid":17128,"hostname":"Marvic-PC","msg":"End of node method fillText"}
+{"level":30,"time":"2025-08-24T12:25:58.533Z","pid":17128,"hostname":"Marvic-PC","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-08-24T12:25:58.533Z","pid":17128,"hostname":"Marvic-PC","msg":"Strict mode is enabled, find Locator with //textarea[@name='bio'] in page."}
+{"level":30,"time":"2025-08-24T12:25:58.545Z","pid":17128,"hostname":"Marvic-PC","msg":"End of node method fillText"}
+{"level":30,"time":"2025-08-24T12:25:58.549Z","pid":17128,"hostname":"Marvic-PC","msg":"Start of node method click"}
+{"level":30,"time":"2025-08-24T12:25:58.549Z","pid":17128,"hostname":"Marvic-PC","msg":"Strict mode is enabled, find Locator with //button[@type='submit' and contains(., 'Save')] in page."}
+{"level":30,"time":"2025-08-24T12:25:58.608Z","pid":17128,"hostname":"Marvic-PC","msg":"End of node method click"}
+{"level":30,"time":"2025-08-24T12:25:58.615Z","pid":17128,"hostname":"Marvic-PC","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-08-24T12:25:58.615Z","pid":17128,"hostname":"Marvic-PC","msg":"Strict mode is enabled, find Locator with //button[@type='submit' and contains(., 'Saved !')] in page."}
+{"level":30,"time":"2025-08-24T12:25:59.495Z","pid":17128,"hostname":"Marvic-PC","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-08-24T12:25:59.528Z","pid":17128,"hostname":"Marvic-PC","msg":"Reload page with options: {\"waitUntil\": \"load\"}"}
+{"level":30,"time":"2025-08-24T12:26:00.241Z","pid":17128,"hostname":"Marvic-PC","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-08-24T12:26:00.242Z","pid":17128,"hostname":"Marvic-PC","msg":"Strict mode is enabled, find Locator with //textarea[@name='bio'] in page."}
+{"level":30,"time":"2025-08-24T12:26:00.619Z","pid":17128,"hostname":"Marvic-PC","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-08-24T12:26:00.634Z","pid":17128,"hostname":"Marvic-PC","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-08-24T12:26:00.634Z","pid":17128,"hostname":"Marvic-PC","msg":"Strict mode is enabled, find Locator with //wz-radio[@value='M']//label[contains(@class, 'checked')] in page."}
+{"level":30,"time":"2025-08-24T12:26:05.643Z","pid":17128,"hostname":"Marvic-PC","msg":"Error of node method  waitForElementState"}
+================= Original suppressed error =================
+locator.waitFor: Timeout 5000ms exceeded.
+Call log:
+[2m  - waiting for locator('//wz-radio[@value=\'M\']//label[contains(@class, \'checked\')]') to be visible[22m
+
+    at waitForElementState (c:\venv\lib\site-packages\Browser\wrapper\index.js:11283:19)
+    at async PlaywrightServer.waitForElementsState (c:\venv\lib\site-packages\Browser\wrapper\index.js:13137:28) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2025-08-24T12:26:05.654Z","pid":17128,"hostname":"Marvic-PC","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-08-24T12:26:05.655Z","pid":17128,"hostname":"Marvic-PC","Take screenshot with options: ":{"path":"C:\\Users\\PC\\Desktop\\Wingz\\browser\\screenshot\\fail-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-08-24T12:26:05.847Z","pid":17128,"hostname":"Marvic-PC","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-08-24T12:26:05.858Z","pid":17128,"hostname":"Marvic-PC","msg":"Start of node method getText"}
+{"level":30,"time":"2025-08-24T12:26:05.859Z","pid":17128,"hostname":"Marvic-PC","msg":"Strict mode is enabled, find Locator with //input[@name='firstName'] in page."}
+{"level":30,"time":"2025-08-24T12:26:05.885Z","pid":17128,"hostname":"Marvic-PC","msg":"Retrieved text for element //input[@name='firstName'] containing Ofyuqbe"}
+{"level":30,"time":"2025-08-24T12:26:05.885Z","pid":17128,"hostname":"Marvic-PC","msg":"End of node method getText"}
+{"level":30,"time":"2025-08-24T12:26:05.890Z","pid":17128,"hostname":"Marvic-PC","msg":"Start of node method getText"}
+{"level":30,"time":"2025-08-24T12:26:05.890Z","pid":17128,"hostname":"Marvic-PC","msg":"Strict mode is enabled, find Locator with //input[@name='lastName'] in page."}
+{"level":30,"time":"2025-08-24T12:26:05.906Z","pid":17128,"hostname":"Marvic-PC","msg":"Retrieved text for element //input[@name='lastName'] containing Ksdwadpjr"}
+{"level":30,"time":"2025-08-24T12:26:05.906Z","pid":17128,"hostname":"Marvic-PC","msg":"End of node method getText"}
+{"level":30,"time":"2025-08-24T12:26:05.912Z","pid":17128,"hostname":"Marvic-PC","msg":"Start of node method getText"}
+{"level":30,"time":"2025-08-24T12:26:05.912Z","pid":17128,"hostname":"Marvic-PC","msg":"Strict mode is enabled, find Locator with //input[@name='location'] in page."}
+{"level":30,"time":"2025-08-24T12:26:05.922Z","pid":17128,"hostname":"Marvic-PC","msg":"Retrieved text for element //input[@name='location'] containing "}
+{"level":30,"time":"2025-08-24T12:26:05.922Z","pid":17128,"hostname":"Marvic-PC","msg":"End of node method getText"}
+{"level":30,"time":"2025-08-24T12:26:05.927Z","pid":17128,"hostname":"Marvic-PC","msg":"Start of node method getText"}
+{"level":30,"time":"2025-08-24T12:26:05.928Z","pid":17128,"hostname":"Marvic-PC","msg":"Strict mode is enabled, find Locator with //textarea[@name='bio'] in page."}
+{"level":30,"time":"2025-08-24T12:26:05.938Z","pid":17128,"hostname":"Marvic-PC","msg":"Retrieved text for element //textarea[@name='bio'] containing Hchzykzf"}
+{"level":30,"time":"2025-08-24T12:26:05.938Z","pid":17128,"hostname":"Marvic-PC","msg":"End of node method getText"}
+{"level":30,"time":"2025-08-24T12:26:06.531Z","pid":17128,"hostname":"Marvic-PC","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2025-08-24T12:26:06.550Z","pid":17128,"hostname":"Marvic-PC","msg":"Removed page=7180f933-86b6-44eb-bbe3-63df6da2dd3e from context=a00ef30d-0c36-4810-840c-9796514f39d3 page stack"}
+{"level":30,"time":"2025-08-24T12:26:06.644Z","pid":17128,"hostname":"Marvic-PC","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (c:\venv\lib\site-packages\Browser\wrapper\index.js:12227:15)
+    at PlaywrightServer.getActiveBrowser (c:\venv\lib\site-packages\Browser\wrapper\index.js:13124:59)
+    at PlaywrightServer.setTimeout (c:\venv\lib\site-packages\Browser\wrapper\index.js:13372:57)
+    at Object.onReceiveHalfClose (c:\venv\lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (c:\venv\lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (c:\venv\lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (c:\venv\lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:382:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2025-08-24T12:26:06.653Z","pid":17128,"hostname":"Marvic-PC","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-24T12:26:06.653Z","pid":17128,"hostname":"Marvic-PC","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (c:\venv\lib\site-packages\Browser\wrapper\index.js:12227:15)
+    at PlaywrightServer.getActiveBrowser (c:\venv\lib\site-packages\Browser\wrapper\index.js:13124:59)
+    at PlaywrightServer.setTimeout (c:\venv\lib\site-packages\Browser\wrapper\index.js:13372:57)
+    at Object.onReceiveHalfClose (c:\venv\lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (c:\venv\lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (c:\venv\lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (c:\venv\lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:382:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2025-08-24T12:26:06.662Z","pid":17128,"hostname":"Marvic-PC","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-24T12:26:06.662Z","pid":17128,"hostname":"Marvic-PC","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-24T12:26:08.731Z","pid":17128,"hostname":"Marvic-PC","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2025-08-24T12:26:08.731Z","pid":17128,"hostname":"Marvic-PC","msg":"End of node method closeAllBrowsers"}
