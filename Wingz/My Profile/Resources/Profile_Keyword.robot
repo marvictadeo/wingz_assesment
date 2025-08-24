@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation    Global Keywords for Test Cases.
+Documentation    Keywords for Test Cases.
 Library          Browser
 Resource         Profile_Variables.robot
 Resource         ../../Global Resources/Global_Keyword.robot
@@ -61,4 +61,5 @@ The User Data Should Be Persist Even After Reload
     Should Be Equal    ${first_name}    ${RANDOM_FNAME}
     Should Be Equal    ${last_name}     ${RANDOM_LNAME}
     Should Be Equal    ${home_city}     ${RANDOM_HOME}
+
     Should Be Equal    ${bio}           ${RANDOM_BIO}
